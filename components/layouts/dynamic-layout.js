@@ -20,3 +20,5 @@ const Layout = ({ advanced, title, content, image, description, route }) => (
     </Head>
   </>
 )
+
+export default Layout
