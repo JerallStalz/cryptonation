@@ -1,5 +1,5 @@
 import { BsSunFill, BsMoonFill } from 'react-icons/bs'
-import { FaWallet } from 'react-icons/fa'
+import { RiWalletFill } from 'react-icons/ri'
 import NextLink from 'next/link'
 
 import Nav, {
@@ -49,8 +49,8 @@ const NavBar = ({ themeToggle, themeMode }) => {
           </NextLink>
         </LinkContainer>
         <ConnectButton>
-          <FaWallet />
-          <span>Connect Wallet</span>
+          <RiWalletFill />
+          <span className="sex">Connect Wallet</span>
         </ConnectButton>
         <ToggleButton themeMode={themeMode} onClick={themeToggle}>
           <BsMoonFill />

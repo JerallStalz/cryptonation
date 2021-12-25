@@ -1,9 +1,15 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { ThemeProvider } from 'styled-components'
 import themes from './theme'
 
 const ThemeToggler = ({ children, Nav }) => {
   const [themeMode, setThemeMode] = useState(false)
+
+  useEffect(() => {
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      setThemeMode(true)
+    }
+  }, [])
   const themeToggle = () => {
     setThemeMode(!themeMode)
   }

@@ -1,0 +1,11 @@
+import styled from 'styled-components'
+
+export const FooterContainer = styled.div`
+  height: 5vw;
+  background: ${({ theme }) => theme.navBackground};
+  color: ${({ theme }) => theme.navColor};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4vw;
+`

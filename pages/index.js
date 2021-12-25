@@ -17,19 +17,20 @@ import binance from '../public/images/binance-logo.svg'
 import ethereum from '../public/images/ethereum-logo.svg'
 import polkadot from '../public/images/polkadot-logo.svg'
 import solana from '../public/images/solana-logo.svg'
+import LinkBox from '../components/link-box'
+import { BsFillCloudSunFill } from 'react-icons/bs'
 
 const Home = () => {
   const [date, setDate] = useState('')
 
   useEffect(() => {
     getDate()
-    console.log(date)
   }, [])
 
   const getDate = async () => {
     try {
       const newDate = await new Date()
-      setDate(String(newDate).slice(0, 15).replaceAll(' ', ` \ `))
+      setDate(String(newDate).slice(4, 15).replaceAll(' ', ` / `))
     } catch (e) {
       console.log(e)
     }
@@ -38,7 +39,10 @@ const Home = () => {
   return (
     <div>
       <TitleContainer>
-        <FloatingDate>{date}</FloatingDate>
+        <FloatingDate>
+          <BsFillCloudSunFill />
+          {date}
+        </FloatingDate>
         <Title>
           <span>Investing early</span>
           <span>on the blockchain</span>
@@ -109,6 +113,7 @@ const Home = () => {
           <span>Help fund it here.</span>
           <small>We bring new technologies to our community.</small>
         </h2>
+        <LinkBox />
       </ProjectsContainer>
     </div>
   )

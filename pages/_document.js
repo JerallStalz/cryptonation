@@ -28,7 +28,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <link
           href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"

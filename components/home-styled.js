@@ -3,7 +3,6 @@ import styled from 'styled-components'
 export const TitleContainer = styled.div`
   position: relative;
   max-width: 100%;
-  font-size: 16px;
 `
 
 export const Title = styled.h1`
@@ -12,9 +11,9 @@ export const Title = styled.h1`
   letter-spacing: -0.5vw;
   font-weight: 500;
   margin: 0;
-  margin-top: 40px;
-  padding-left: 60px;
-  padding-right: 180px;
+  padding-top: 3vw;
+  padding-left: 7vw;
+  padding-right: 14vw;
   & span {
     display: block;
   }
@@ -22,12 +21,15 @@ export const Title = styled.h1`
 
 export const FloatingDate = styled.span`
   position: absolute;
-  right: 40px;
-  top: 50px;
+  right: 3.2vw;
+  top: 7vw;
   font-weight: 600;
-  font-size: 1.15vw;
+  font-size: 1.25vw;
   padding-right: 40px;
   color: ${({ theme }) => theme.subTextColor};
+  & svg {
+    margin-right: 0.8vw;
+  }
 `
 
 export const FloatingArticle = styled.article`
@@ -42,7 +44,7 @@ export const FloatingArticle = styled.article`
 `
 
 export const FloatingButtonContainer = styled.div`
-  height: 3.5vw;
+  height: 4.5vw;
   padding-top: 4vw;
   width: 100%;
   margin: 0 auto;
@@ -51,14 +53,15 @@ export const FloatingButtonContainer = styled.div`
 `
 
 export const FloatingButton = styled.button`
-  background: ${({ theme }) => theme.mainColor};
+  background: ${({ theme }) => theme.navBackground};
+  border: 1px solid ${({ theme }) => theme.mainColor};
   height: 100%;
   border-radius: 3vw;
-  border: none;
-  color: #fff;
-  font-size: 1.15vw;
+  color: ${({ theme }) => theme.mainColor};
+  font-size: 1.05vw;
   font-weight: 600;
-  padding: 0 20px;
+  padding: 0 3vw;
+  cursor: pointer;
 `
 
 export const SupportsAnnon = styled.div`
@@ -92,6 +95,7 @@ export const SupportPlatforms = styled.div`
   height: 6.5vw;
   display: flex;
   position: relative;
+  top: 1px;
   & div {
     background-color: ${({ theme }) => theme.navBackground};
     width: 55%;
@@ -128,11 +132,11 @@ export const ProjectsContainer = styled.div`
   color: ${({ theme }) => theme.navColor};
   background-color: ${({ theme }) => theme.navBackground};
   position: relative;
-  top: -1px;
   padding: 4.5vw 5vw;
   & small {
     color: ${({ theme }) => theme.mainColor};
     text-transform: uppercase;
+    font-size: 1.2vw;
   }
   h2 {
     & span {

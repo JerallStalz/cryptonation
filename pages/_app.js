@@ -4,6 +4,7 @@ import Head from 'next/head'
 import NavBar from '../components/navbar'
 import GlobalStyle from '../components/globalStyle'
 import ThemeToggler from '../components/theme-toggler'
+import Footer from '../components/footer'
 
 const Website = ({ Component, router, pageProps }) => {
   return (
@@ -25,6 +26,7 @@ const Website = ({ Component, router, pageProps }) => {
       <ThemeToggler Nav={NavBar}>
         <GlobalStyle />
         <Component {...pageProps} key={router.route} />
+        <Footer />
       </ThemeToggler>
     </>
   )
