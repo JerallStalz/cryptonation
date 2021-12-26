@@ -22,7 +22,7 @@ export const Logo = styled.svg`
   cursor: pointer;
   margin-left: 20px;
   & .text {
-    fill: ${props => props.theme.logoColor || '#fff'};
+    fill: ${props => props.theme.navColor || '#fff'};
   }
 `
 export const Menu = styled.div`

@@ -20,10 +20,10 @@ export const Title = styled.h1`
   @media (max-width: 600px) {
     font-size: 19vw;
     line-height: 18vw;
-    padding-top: 20vw;
+    padding-top: 18vw;
     padding-right: 30px;
     padding-left: 30px;
-    padding-bottom: 18.5vw;
+    padding-bottom: 16.5vw;
     text-align: center;
   }
 `
@@ -65,8 +65,8 @@ export const FloatingArticle = styled.article`
   @media (max-width: 600px) {
     max-width: 100%;
     position: relative;
-    font-size: 4vw;
-    line-height: 4.8vw;
+    font-size: 3.8vw;
+    line-height: 4.6vw;
     left: 0;
     display: block;
     text-align: center;
@@ -83,8 +83,8 @@ export const FloatingButtonContainer = styled.div`
   display: flex;
   justify-content: center;
   @media (max-width: 600px) {
-    height: 40px;
-    padding-top: 12vw;
+    height: 12vw;
+    padding-top: 10vw;
   }
 `
 
@@ -99,7 +99,8 @@ export const FloatingButton = styled.button`
   padding: 0 3vw;
   cursor: pointer;
   @media (max-width: 600px) {
-    font-size: 12px;
+    font-size: 3.7vw;
+    padding: 0 6vw;
     border-radius: 25px;
   }
 `
