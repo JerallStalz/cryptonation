@@ -20,11 +20,10 @@ export const Title = styled.h1`
   @media (max-width: 600px) {
     font-size: 60px;
     line-height: 60px;
-    padding-top: 120px;
+    padding-top: 100px;
     padding-right: 30px;
     padding-left: 30px;
-    padding-bottom: 90px;
-
+    padding-bottom: 70px;
     text-align: center;
   }
 `
@@ -85,6 +84,7 @@ export const FloatingButtonContainer = styled.div`
   justify-content: center;
   @media (max-width: 600px) {
     height: 40px;
+    padding-top: 50px;
   }
 `
 
