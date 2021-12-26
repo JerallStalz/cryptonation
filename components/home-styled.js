@@ -20,9 +20,11 @@ export const Title = styled.h1`
   @media (max-width: 600px) {
     font-size: 60px;
     line-height: 60px;
-    padding-top: 45px;
+    padding-top: 120px;
     padding-right: 30px;
     padding-left: 30px;
+    padding-bottom: 90px;
+
     text-align: center;
   }
 `
