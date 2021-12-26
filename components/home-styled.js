@@ -123,7 +123,7 @@ export const SupportsAnnon = styled.div`
       bottom: -1vw;
       font-size: 1.25vw;
       @media (max-width: 600px) {
-        font-size: 13px;
+        font-size: 3.8vw;
       }
     }
   }
@@ -204,11 +204,17 @@ export const ProjectsContainer = styled.div`
     color: ${({ theme }) => theme.mainColor};
     text-transform: uppercase;
     font-size: 1.2vw;
+    @media (max-width: 600px) {
+      font-size: 3.6vw;
+    }
   }
   h2 {
     & span {
       font-size: 4.5vw;
       font-weight: 400;
+      @media (max-width: 600px) {
+        font-size: 8vw;
+      }
     }
     & span:first-child {
       display: block;
@@ -219,6 +225,14 @@ export const ProjectsContainer = styled.div`
       font-weight: 400;
       color: ${({ theme }) => theme.navColor};
       opacity: 0.8;
+      @media (max-width: 600px) {
+        font-size: 3.3vw;
+        display: block;
+        padding: 6vw 0;
+      }
+    }
+    @media (max-width: 600px) {
+      margin-bottom: 0;
     }
   }
 `

@@ -22,12 +22,24 @@ export const Category = styled.div`
   align-items: center;
   margin-right: 2vw;
   cursor: pointer;
+  @media (max-width: 600px) {
+    font-size: 4vw;
+    border-radius: 20vw;
+    padding: 0 4vw;
+    min-width: fit-content;
+  }
 `
 
 export const CategoryContainer = styled.div`
   margin-top: 7vw;
   display: flex;
   height: 3.5vw;
+  @media (max-width: 600px) {
+    margin-top: 0;
+    height: 7.5vw;
+    overflow: scroll;
+    padding-bottom: 4vw;
+  }
 `
 export const BoxContainer = styled.div`
   padding: 5vw 0;

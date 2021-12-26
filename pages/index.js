@@ -59,7 +59,7 @@ const Home = () => {
 
       <SupportsAnnon>
         <div>
-          <span>Supported networks by</span>
+          <span>Supported by</span>
         </div>
         <Rounded
           id="fd274703-ad24-4b34-ac10-1465e422daef"
