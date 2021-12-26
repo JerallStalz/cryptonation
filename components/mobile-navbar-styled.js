@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Nav = styled.nav`
-  height: 60px;
+  height: 70px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -18,7 +18,7 @@ export const Nav = styled.nav`
 `
 export const Logo = styled.svg`
   fill: rgb(243, 186, 47);
-  height: 35%;
+  height: 38%;
   cursor: pointer;
   margin-left: 30px;
   & .text {

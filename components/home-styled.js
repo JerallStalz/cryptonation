@@ -20,10 +20,10 @@ export const Title = styled.h1`
   @media (max-width: 600px) {
     font-size: 19vw;
     line-height: 18vw;
-    padding-top: 80px;
+    padding-top: 23vw;
     padding-right: 30px;
     padding-left: 30px;
-    padding-bottom: 70px;
+    padding-bottom: 21.5vw;
     text-align: center;
   }
 `
@@ -40,7 +40,7 @@ export const FloatingDate = styled.span`
     margin-right: 0.8vw;
   }
   @media (max-width: 600px) {
-    top: 30px;
+    top: 5vw;
     font-size: 3.7vw;
     right: 10px;
     padding-right: 0;
@@ -65,10 +65,11 @@ export const FloatingArticle = styled.article`
   @media (max-width: 600px) {
     max-width: 100%;
     position: relative;
-    font-size: 4.3vw;
+    font-size: 4vw;
     line-height: 4.8vw;
     left: 0;
     display: block;
+    text-align: center;
     padding: 0 5vw;
   }
 `
