@@ -2,13 +2,16 @@ import styled from 'styled-components'
 
 export const Nav = styled.nav`
   height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
   color: ${({ theme }) => theme.navColor};
-  background: ${({ theme }) => theme.navBackground};
+  background: ${({ theme }) => theme.mobileNavBackground};
   display: none;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0 30px;
   @media (max-width: 700px) {
     display: flex;
   }
@@ -17,7 +20,15 @@ export const Logo = styled.svg`
   fill: rgb(243, 186, 47);
   height: 35%;
   cursor: pointer;
+  margin-left: 30px;
   & .text {
     fill: ${props => props.theme.logoColor || '#fff'};
   }
+`
+export const Menu = styled.div`
+  height: 100%;
+  width: auto;
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
 `

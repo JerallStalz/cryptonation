@@ -18,9 +18,9 @@ export const Title = styled.h1`
     display: block;
   }
   @media (max-width: 600px) {
-    font-size: 60px;
-    line-height: 60px;
-    padding-top: 100px;
+    font-size: 19vw;
+    line-height: 18vw;
+    padding-top: 80px;
     padding-right: 30px;
     padding-left: 30px;
     padding-bottom: 70px;
@@ -40,8 +40,8 @@ export const FloatingDate = styled.span`
     margin-right: 0.8vw;
   }
   @media (max-width: 600px) {
-    top: 20px;
-    font-size: 14px;
+    top: 30px;
+    font-size: 3.7vw;
     right: 10px;
     padding-right: 0;
   }
@@ -58,19 +58,18 @@ export const FloatingArticle = styled.article`
   left: 43vw;
   & span {
     @media (max-width: 600px) {
-      display: inline-block;
+      display: inline;
+      margin-right: 3.5vw;
     }
   }
   @media (max-width: 600px) {
     max-width: 100%;
     position: relative;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 4.3vw;
+    line-height: 4.8vw;
     left: 0;
-    display: flex;
-    flex-direction: column;
-    padding: 0 20px;
-    padding-top: 40px;
+    display: block;
+    padding: 0 5vw;
   }
 `
 
@@ -151,6 +150,7 @@ export const SupportPlatforms = styled.div`
     padding-top: 1vw;
     @media (max-width: 600px) {
       width: 100%;
+      justify-content: space-between;
     }
   }
   & svg {
@@ -163,8 +163,8 @@ export const SupportPlatforms = styled.div`
     margin: 0 1.5vw;
     position: relative;
     @media (max-width: 600px) {
-      width: 80px !important;
-      height: 30px !important;
+      width: 20vw !important;
+      height: 10vw !important;
     }
   }
   @media (max-width: 600px) {
@@ -184,8 +184,12 @@ export const SupportsFloat = styled.span`
   height: 100%;
   justify-content: center;
   flex-direction: column;
+
   & span {
     padding-bottom: 0.3vw;
+  }
+  @media (max-width: 600px) {
+    display: none;
   }
 `
 

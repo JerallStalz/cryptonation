@@ -1,4 +1,4 @@
-import { Nav, Logo } from './mobile-navbar-styled'
+import { Nav, Logo, Menu } from './mobile-navbar-styled'
 import NextLink from 'next/link'
 import { GiHamburgerMenu } from 'react-icons/gi'
 
@@ -14,7 +14,9 @@ const MobileNavbar = () => {
           <path d="M 40.172 11.146 L 48.768 26.987 L 65.135 35.306 L 48.768 43.626 L 40.172 59.469 L 31.578 43.626 L 15.212 35.306 L 31.578 26.987 L 40.172 11.146 Z M 39.797 34.303 L 29.121 35.065 L 40.092 34.332 L 39.586 44.71 L 39.896 34.434 L 50.296 35.306 L 39.827 34.59 L 40.335 24.937 L 39.797 34.303 Z" />
         </Logo>
       </NextLink>
-      <GiHamburgerMenu size={24} />
+      <Menu>
+        <GiHamburgerMenu size={24} />
+      </Menu>
     </Nav>
   )
 }

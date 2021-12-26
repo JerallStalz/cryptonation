@@ -10,6 +10,11 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Barlow', sans-serif;
     font-weight: 400;
     transition: 400ms;
+  & > div {
+    @media (max-width: 600px) {
+    padding-top: 70px;
+  }
+  }
   }
 `
 export default GlobalStyle
