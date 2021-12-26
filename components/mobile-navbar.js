@@ -2,7 +2,7 @@ import { Nav, Logo } from './mobile-navbar-styled'
 import NextLink from 'next/link'
 import { GiHamburgerMenu } from 'react-icons/gi'
 
-const MobileNavbar = ({ themeToggle, themeMode }) => {
+const MobileNavbar = () => {
   return (
     <Nav>
       <NextLink href="/">
