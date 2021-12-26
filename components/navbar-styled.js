@@ -6,6 +6,9 @@ const Nav = styled.nav`
   align-items: center;
   justify-content: space-between;
   margin-left: 4.5vw;
+  @media (max-width: 700px) {
+    display: none;
+  }
 `
 
 export const ToggleButton = styled.button`

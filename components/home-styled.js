@@ -17,6 +17,13 @@ export const Title = styled.h1`
   & span {
     display: block;
   }
+  @media (max-width: 600px) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
 `
 
 export const FloatingDate = styled.span`
@@ -29,6 +36,12 @@ export const FloatingDate = styled.span`
   color: ${({ theme }) => theme.subTextColor};
   & svg {
     margin-right: 0.8vw;
+  }
+  @media (max-width: 600px) {
+    top: 10px;
+    font-size: 16px;
+    right: 10px;
+    padding-right: 0;
   }
 `
 

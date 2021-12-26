@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { ThemeProvider } from 'styled-components'
+import MobileNavbar from './mobile-navbar'
 import themes from './theme'
 
 const ThemeToggler = ({ children, Nav }) => {
@@ -16,6 +17,7 @@ const ThemeToggler = ({ children, Nav }) => {
   return (
     <ThemeProvider theme={themeMode ? themes.dark : themes.light}>
       <Nav themeToggle={themeToggle} themeMode={themeMode} />
+      <MobileNavbar />
       {children}
     </ThemeProvider>
   )
