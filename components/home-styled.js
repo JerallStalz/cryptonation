@@ -20,9 +20,10 @@ export const Title = styled.h1`
   @media (max-width: 600px) {
     font-size: 60px;
     line-height: 60px;
-    padding-top: 30px;
+    padding-top: 45px;
     padding-right: 30px;
     padding-left: 30px;
+    text-align: center;
   }
 `
 
@@ -38,8 +39,8 @@ export const FloatingDate = styled.span`
     margin-right: 0.8vw;
   }
   @media (max-width: 600px) {
-    top: 10px;
-    font-size: 16px;
+    top: 20px;
+    font-size: 14px;
     right: 10px;
     padding-right: 0;
   }
@@ -52,8 +53,24 @@ export const FloatingArticle = styled.article`
   color: ${({ theme }) => theme.subTextColor};
   font-size: 1.35vw;
   line-height: 2.6vw;
-  bottom: 0vw;
+  bottom: 0;
   left: 43vw;
+  & span {
+    @media (max-width: 600px) {
+      display: inline-block;
+    }
+  }
+  @media (max-width: 600px) {
+    max-width: 100%;
+    position: relative;
+    font-size: 14px;
+    line-height: 18px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    padding-top: 40px;
+  }
 `
 
 export const FloatingButtonContainer = styled.div`
@@ -61,20 +78,28 @@ export const FloatingButtonContainer = styled.div`
   padding-top: 4vw;
   width: 100%;
   margin: 0 auto;
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
+  @media (max-width: 600px) {
+    height: 40px;
+  }
 `
 
 export const FloatingButton = styled.button`
-  background: ${({ theme }) => theme.navBackground};
+  background: ${({ theme }) => theme.mainColor};
   border: 1px solid ${({ theme }) => theme.mainColor};
   height: 100%;
   border-radius: 3vw;
-  color: ${({ theme }) => theme.mainColor};
+  color: ${({ theme }) => theme.color};
   font-size: 1.05vw;
   font-weight: 600;
   padding: 0 3vw;
   cursor: pointer;
+  @media (max-width: 600px) {
+    font-size: 12px;
+    border-radius: 25px;
+  }
 `
 
 export const SupportsAnnon = styled.div`
@@ -84,8 +109,8 @@ export const SupportsAnnon = styled.div`
     display: flex;
     align-items: center;
     height: 100%;
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 4vw;
+    padding-right: 4vw;
     color: ${({ theme }) => theme.navColor};
     background-color: ${({ theme }) => theme.navBackground};
     position: relative;
@@ -94,7 +119,13 @@ export const SupportsAnnon = styled.div`
       position: relative;
       bottom: -1vw;
       font-size: 1.25vw;
+      @media (max-width: 600px) {
+        font-size: 13px;
+      }
     }
+  }
+  @media (max-width: 600px) {
+    height: 40px;
   }
 `
 
@@ -116,11 +147,26 @@ export const SupportPlatforms = styled.div`
     align-items: center;
     padding: 0 2%;
     padding-top: 1vw;
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+  }
+  & svg {
+    @media (max-width: 600px) {
+      display: none;
+    }
   }
   & article {
     opacity: 0.7;
     margin: 0 1.5vw;
     position: relative;
+    @media (max-width: 600px) {
+      width: 80px !important;
+      height: 30px !important;
+    }
+  }
+  @media (max-width: 600px) {
+    height: 40px;
   }
 `
 
