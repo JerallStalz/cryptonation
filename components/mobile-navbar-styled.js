@@ -20,7 +20,7 @@ export const Logo = styled.svg`
   fill: rgb(243, 186, 47);
   height: 38%;
   cursor: pointer;
-  margin-left: 30px;
+  margin-left: 20px;
   & .text {
     fill: ${props => props.theme.logoColor || '#fff'};
   }
@@ -30,5 +30,5 @@ export const Menu = styled.div`
   width: auto;
   display: flex;
   align-items: center;
-  margin-right: 30px;
+  margin-right: 20px;
 `
