@@ -49,7 +49,11 @@ export const BoxContainer = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  @media (max-width: 600px) {
+    padding: 0;
+    margin-top: 5vw;
+  }
 `
 export const Box = styled.div`
   display: flex;
@@ -58,8 +62,7 @@ export const Box = styled.div`
   border-radius: 1.3vw;
   overflow: hidden;
   background: rgba(70, 70, 70, 0.3);
-  margin: 0 3vw;
-  margin-bottom: 3vw;
+  margin-bottom: 6vw;
   cursor: pointer;
   animation-name: ${appear};
   animation-timing-function: ease-in;
@@ -68,6 +71,9 @@ export const Box = styled.div`
     margin: 0;
     position: relative;
     height: 13vw;
+    @media (max-width: 600px) {
+      height: 23vw;
+    }
   }
   & > div {
     height: 10vw;
@@ -75,10 +81,18 @@ export const Box = styled.div`
     margin: 0;
     padding: 0 1vw;
     padding-top: 2.3vw;
+    @media (max-width: 600px) {
+      height: 20vw;
+      padding-top: 6vw;
+    }
     & span {
       display: inline-block;
       width: 100%;
       font-size: 1.4vw;
+      @media (max-width: 600px) {
+        font-size: 3.3vw;
+        padding: 0 5%;
+      }
       & p {
         margin: 0;
         display: inline-block;
@@ -97,6 +111,11 @@ export const Box = styled.div`
       font-weight: 400;
       padding-top: 1vw;
       margin: 0 1vw;
+      @media (max-width: 600px) {
+        font-size: 2.8vw;
+        margin: 0 10%;
+        width: 80%;
+      }
       p {
         display: inline-block;
         opacity: 0.6;
@@ -119,6 +138,14 @@ export const Box = styled.div`
         border-radius: 50%;
         width: 100%;
       }
+      @media (max-width: 600px) {
+        height: 10vw;
+        width: 10vw;
+        top: -5vw;
+      }
     }
+  }
+  @media (max-width: 600px) {
+    width: 48%;
   }
 `
