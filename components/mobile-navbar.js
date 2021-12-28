@@ -1,10 +1,11 @@
 import { Nav, Logo, Menu, Slider } from './mobile-navbar-styled'
 import NextLink from 'next/link'
 import { GiHamburgerMenu } from 'react-icons/gi'
-import { useState } from 'react/cjs/react.development'
+import { useState } from 'react'
 
 const MobileNavbar = () => {
   const [slider, setSlider] = useState(false)
+
   return (
     <>
       <Nav>
