@@ -49,10 +49,11 @@ export const BoxContainer = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   @media (max-width: 600px) {
     padding: 0;
     margin-top: 5vw;
+    justify-content: space-between;
   }
 `
 export const Box = styled.div`
@@ -62,11 +63,13 @@ export const Box = styled.div`
   border-radius: 1.3vw;
   overflow: hidden;
   background: rgba(70, 70, 70, 0.3);
-  margin-bottom: 6vw;
   cursor: pointer;
   animation-name: ${appear};
   animation-timing-function: ease-in;
   animation-duration: 300ms;
+  margin: 2vw;
+  margin-top: 0;
+  margin-bottom: 2.5vw;
   & figure {
     margin: 0;
     position: relative;
@@ -147,5 +150,7 @@ export const Box = styled.div`
   }
   @media (max-width: 600px) {
     width: 48%;
+    margin: 0;
+    margin-bottom: 4vw;
   }
 `

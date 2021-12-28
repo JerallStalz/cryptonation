@@ -5,7 +5,6 @@ const themes = {
     color: '#000',
     navColor: '#fff',
     navBackground: '#151515',
-    mobileNavBackground: 'rgba(21, 21, 21, 0.6)',
     logoColor: '#000',
     subTextColor: '#444'
   },
@@ -15,7 +14,6 @@ const themes = {
     color: '#fff',
     navColor: '#fff',
     navBackground: '#262a36',
-    mobileNavBackground: 'rgba(38, 42, 54, 0.6)',
     logoColor: '#fff',
     subTextColor: '#888'
   }

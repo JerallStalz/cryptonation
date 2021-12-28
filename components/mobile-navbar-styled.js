@@ -7,7 +7,7 @@ export const Nav = styled.nav`
   top: 0;
   z-index: 1000;
   color: ${({ theme }) => theme.navColor};
-  background: ${({ theme }) => theme.mobileNavBackground};
+  background: ${({ theme }) => theme.navBackground};
   display: none;
   flex-direction: row;
   justify-content: space-between;
@@ -31,4 +31,36 @@ export const Menu = styled.div`
   display: flex;
   align-items: center;
   margin-right: 20px;
+`
+
+export const Slider = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 70px;
+  transform: ${({ active }) => (active ? 'translateX(0)' : 'translateX(100%)')};
+  z-index: 200;
+  background: rgba(0, 0, 0, 0.7);
+  & > div {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 4vw 2vw;
+    background: ${({ theme }) => theme.navBackground};
+    & > span {
+      height: 12vw;
+      padding: 4vw;
+      background: #111;
+
+      margin: 2vw 0;
+      box-sizing: border-box;
+      &:first-child {
+      }
+    }
+  }
+  & > span {
+    width: 20%;
+  }
 `
