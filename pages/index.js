@@ -1,9 +1,7 @@
-import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import {
   Title,
   TitleContainer,
-  FloatingDate,
   FloatingArticle,
   FloatingButton,
   FloatingButtonContainer,
