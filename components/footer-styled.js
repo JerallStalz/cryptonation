@@ -8,7 +8,7 @@ export const FooterContainer = styled.div`
   align-items: center;
   justify-content: center;
   font-size: 1.4vw;
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     font-size: 3.6vw;
     height: 10vw;
   }
