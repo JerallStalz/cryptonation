@@ -21,7 +21,7 @@ const Website = ({ Component, router, pageProps }) => {
           property="og:description"
           content="A exchange Cryptocurrencies App"
         />
-        <meta property="og:url" content="pokedrip.netlify.app" />
+        <meta property="og:url" content="cryptonation-seven.vercel.app" />
       </Head>
       <ThemeToggler Nav={NavBar}>
         <GlobalStyle />

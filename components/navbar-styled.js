@@ -108,6 +108,7 @@ export const ConnectButton = styled.button`
   text-transform: capitalize;
   padding: 12px 15px;
   cursor: pointer;
+  
   @media (max-width: 800px) {
     min-width: 4vw;
     min-height: 4vw;
@@ -125,6 +126,9 @@ export const ConnectButton = styled.button`
     }}
   & span {
     font-weight: 500;
+    &:hover {
+    border-bottom: none;
+    }
     @media (max-width: 800px) {
     display: none;
 }

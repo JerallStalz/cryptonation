@@ -18,7 +18,7 @@ export const Nav = styled.nav`
 `
 export const Logo = styled.svg`
   fill: rgb(243, 186, 47);
-  height: 38%;
+  height: 32%;
   cursor: pointer;
   margin-left: 20px;
   & .text {
@@ -39,25 +39,32 @@ export const Slider = styled.div`
   width: 100%;
   height: 100%;
   position: fixed;
-  top: 70px;
+  top: 60px;
   transform: ${({ active }) => (active ? 'translateX(0)' : 'translateX(100%)')};
   z-index: 200;
   background: rgba(0, 0, 0, 0.7);
+  font-size: 4vw;
   & > div {
     width: 80%;
     display: flex;
     flex-direction: column;
-    padding: 4vw 2vw;
     background: ${({ theme }) => theme.navBackground};
+    transform: ${({ active }) =>
+      active ? 'translateX(0)' : 'translateX(100%)'};
+    transition: 200ms;
+    border-top: 1px solid #444;
+    position: relative;
     & > span {
-      height: 12vw;
+      top: 0;
+      color: #fff;
+      margin-bottom: 1px;
       padding: 4vw;
-      background: #111;
-
-      margin: 2vw 0;
       box-sizing: border-box;
-      &:first-child {
-      }
+      border-bottom: 1px solid #444;
+      transform: ${({ active }) =>
+        active ? 'translateX(0)' : 'translateX(100%)'};
+
+      transition: 300ms;
     }
   }
   & > span {

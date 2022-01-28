@@ -22,6 +22,9 @@ export const Category = styled.div`
   align-items: center;
   margin-right: 2vw;
   cursor: pointer;
+  &:hover {
+    transform: scale(1.07);
+  }
   @media (max-width: 600px) {
     font-size: 4vw;
     border-radius: 20vw;
@@ -70,6 +73,11 @@ export const Box = styled.div`
   margin: 2vw;
   margin-top: 0;
   margin-bottom: 2.5vw;
+  &:hover {
+    & span {
+      color: ${({ theme }) => theme.mainColor};
+    }
+  }
   & figure {
     margin: 0;
     position: relative;
